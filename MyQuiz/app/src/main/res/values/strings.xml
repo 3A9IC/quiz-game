@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyQuiz</string>
+    <string name="Start">Начать</string>
+    <string name="stage_easy">Легкий уровень</string>
+    <string name="stage1">Уровень 1</string>
+    <string name="stage2">Уровень 2</string>
+    <string name="stage3">Уровень 3</string>
+    <string name="stage_normal">Средний уровень</string>
+    <string name="stage_hard">Сложный уровень</string>
+    <string name="title_activity_main_ans">Уровень</string>
+    <string name="title_activity_main_stage">Выбор уровней</string>
+    <string name="title_activity_main_activity">Угадай фильм</string>
+</resources>

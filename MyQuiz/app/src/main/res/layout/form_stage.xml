@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView_easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage_easy"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_stage_easy_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:onClick="onClick"
+        android:text="@string/stage1" />
+
+    <Button
+        android:id="@+id/button_stage_easy_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage2" />
+
+    <Button
+        android:id="@+id/button_stage_easy_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage3" />
+
+    <TextView
+        android:id="@+id/textView_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage_normal"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/button_stage_normal_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="@string/stage1" />
+
+    <Button
+        android:id="@+id/button_stage_normal_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage2" />
+
+    <Button
+        android:id="@+id/button_stage_normal_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage3" />
+
+    <TextView
+        android:id="@+id/textView_hard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage_hard"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button_stage_hard_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="@string/stage1" />
+
+    <Button
+        android:id="@+id/button_stage_hard_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage2" />
+
+    <Button
+        android:id="@+id/button_stage_hard_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="@string/stage3" />
+
+
+</LinearLayout>
