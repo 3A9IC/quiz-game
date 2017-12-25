@@ -33,7 +33,7 @@ public class FilmsDBHelper extends SQLiteOpenHelper {
 
     public FilmsDBHelper(Context context) {
        // super(context, DB_NAME,null, DATABASE_VERSION);
-        super(context, DB_NAME,null, 11);
+        super(context, DB_NAME,null, 13);
         this.myContext = context;
         this.DB_PATH = "/data/data/" + context.getPackageName() + "/" + "databases/";
         Log.e("Path 1", DB_PATH);
@@ -43,13 +43,13 @@ public class FilmsDBHelper extends SQLiteOpenHelper {
         boolean dbExist = checkDataBase();
         if (dbExist){
 
-           /* this.getReadableDatabase();
+            this.getReadableDatabase();
             try {
                 copyDataBase();
             }
             catch (IOException e){
                 throw new Error("Error copying database");
-            }*/ //РАБОТАЕТ КОПИРОВАНИЕ ЗАНОГО
+            }//РАБОТАЕТ КОПИРОВАНИЕ ЗАНОГО
 
         }
         else {
@@ -117,11 +117,41 @@ public class FilmsDBHelper extends SQLiteOpenHelper {
             }*/
         //db.execSQL("DROP TABLE IF EXISTS + TABLE_NAME);
         try {
+            updateDataBase(); // Никак не работает
+        } catch (IOException ioe){
+            throw new Error("Unable to update database");
+        }
+       /* this.getReadableDatabase();
+        try {
             copyDataBase();
         }
         catch (IOException e){
             throw new Error("Error copying database");
+        }*/
+    }
+
+    public void updateDataBase() throws IOException{
+       /* boolean dbExist = checkDataBase();
+        if (dbExist){
+
+            this.getReadableDatabase();
+            try {
+                copyDataBase();
+            }
+            catch (IOException e){
+                throw new Error("Error copying database");
+            }
+
         }
+        else {
+            this.getReadableDatabase();
+            try {
+                copyDataBase();
+            }
+            catch (IOException e){
+                throw new Error("Error copying database");
+            }
+        }*/
     }
 
     public Cursor query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy){
